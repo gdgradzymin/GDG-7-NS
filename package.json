@@ -49,7 +49,7 @@
         "zone.js": "0.8.29"
     },
     "devDependencies": {
-        "@angular/compiler-cli": "7.2.4",
+        "@angular/compiler-cli": "^7.2.6",
         "@ngtools/webpack": "~7.1.0",
         "nativescript-dev-typescript": "0.8.0",
         "nativescript-dev-webpack": "0.20.0",
