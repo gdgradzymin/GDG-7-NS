@@ -16,11 +16,9 @@ export class HomeComponent implements OnInit {
         
         var res = localStorage.getItem('counter');
         if(res != null){
-            console.log(res);
             this.clickCount = parseInt(res);
             this.clickCount = this.clickCount + 1;
         } else{
-            console.log("Res is null");
             this.clickCount = 1;
         }
         console.log(this.clickCount);
