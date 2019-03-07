@@ -1,6 +1,8 @@
 import { ItemEventData } from "tns-core-modules/ui/list-view"
 import { Component, OnInit } from "@angular/core";
 
+require("nativescript-localstorage");
+
 @Component({
     selector: "Home",
     moduleId: module.id,
@@ -12,6 +14,7 @@ export class HomeComponent implements OnInit {
 
     onItemTap(args: ItemEventData): void {
         console.log('Item with index: ' + args.index + ' tapped');
+        localStorage.setItem('k1', 'some value');
     }
     txt: string = "";
 
