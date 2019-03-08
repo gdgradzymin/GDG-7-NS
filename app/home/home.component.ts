@@ -9,9 +9,20 @@ import { Component, OnInit } from "@angular/core";
 })
 export class HomeComponent implements OnInit {
 
-
+    clickCount: number = 0;
+    clickCountStr: string = "";
     onItemTap(args: ItemEventData): void {
         console.log('Item with index: ' + args.index + ' tapped');
+        
+        var res = localStorage.getItem('counter');
+        if(res != null){
+            this.clickCount = parseInt(res);
+            this.clickCount = this.clickCount + 1;
+        } else{
+            this.clickCount = 1;
+        }
+        console.log(this.clickCount);
+        localStorage.setItem('counter', this.clickCount.toString());
     }
     txt: string = "";
 
