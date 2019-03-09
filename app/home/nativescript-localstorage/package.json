@@ -1,28 +1,32 @@
 {
-  "_from": "nativescript-localstorage",
+  "_args": [
+    [
+      "nativescript-localstorage@2.0.0",
+      "C:\\Users\\seden\\Documents\\GitHub\\GDG-7-NS"
+    ]
+  ],
+  "_from": "nativescript-localstorage@2.0.0",
   "_id": "nativescript-localstorage@2.0.0",
   "_inBundle": false,
   "_integrity": "sha512-5iwwCrXp4CugQlRV6Ic4upUy/MsBw4P9lg2mrnPoaDWwrUu4yOaJzFiUZVmFPJXTAF8KiJPpWXx287ImbkDjsg==",
   "_location": "/nativescript-localstorage",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "nativescript-localstorage",
+    "raw": "nativescript-localstorage@2.0.0",
     "name": "nativescript-localstorage",
     "escapedName": "nativescript-localstorage",
-    "rawSpec": "",
+    "rawSpec": "2.0.0",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "2.0.0"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/nativescript-localstorage/-/nativescript-localstorage-2.0.0.tgz",
-  "_shasum": "b8807e76bfbac11ed62c0e33e411f5b063727881",
-  "_spec": "nativescript-localstorage",
-  "_where": "C:\\Users\\mbednarek7\\source\\gdg\\GDG-7-NS",
+  "_spec": "2.0.0",
+  "_where": "C:\\Users\\seden\\Documents\\GitHub\\GDG-7-NS",
   "author": {
     "name": "Nathanael Anderson",
     "email": "nathan@master-technology.com"
@@ -30,7 +34,6 @@
   "bugs": {
     "url": "https://github.com/NathanaelA/nativescript-localstorage/issues"
   },
-  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Stanimira Vlaeva",
@@ -43,7 +46,6 @@
       "url": "https://github.com/danielkucal"
     }
   ],
-  "deprecated": false,
   "description": "LocalStorage/SessionStorage API",
   "homepage": "https://github.com/NathanaelA/nativescript-localstorage",
   "keywords": [
