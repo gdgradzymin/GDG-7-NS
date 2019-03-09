@@ -1,0 +1,66 @@
+{
+    "name": "nativescript-localstorage",
+    "version": "2.0.0",
+    "description": "LocalStorage/SessionStorage API",
+    "main": "localstorage",
+    "nativescript": {
+        "platforms": {
+            "android": "1.0.0",
+            "ios": "1.0.0"
+        },
+	  "plugin": {
+		"nan": "true",
+		"pan": "true",
+		"core3": "true",
+		"category": "Processing"
+	  }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/NathanaelA/nativescript-localstorage.git"
+    },
+    "keywords": [
+        "NativeScript",
+        "local storage",
+        "localstorage",
+        "session storage",
+        "sessionstorage",
+        "nativescript",
+        "data",
+        "storage"
+    ],
+    "author": {
+        "name": "Nathanael Anderson",
+        "email": "nathan@master-technology.com"
+    },
+	"contributors": [
+    {
+      "name": "Stanimira Vlaeva",
+      "email": "stanimira.vlaeva@gmail.com",
+      "url": "https://github.com/sis0k0"
+    },
+	{
+      "name": "Daniel Kucal",
+      "email": "dkucal@gmail.com",
+      "url": "https://github.com/danielkucal"
+    }
+	],
+    "license": {
+        "type": "MIT",
+        "url": "https://github.com/NathanaelA/nativescript-localstorage/blob/master/LICENSE"
+    },
+    "bugs": {
+        "url": "https://github.com/NathanaelA/nativescript-localstorage/issues"
+    },
+    "homepage": "https://github.com/NathanaelA/nativescript-localstorage",
+    "readmeFilename": "README.md",
+    "scripts": {
+        "demo.ios": "npm run preparedemo && cd demo && tns emulate ios",
+        "demo.android": "npm run preparedemo && cd demo && tns run android",
+        "debug.ios": "npm run preparedemo && cd demo && tns debug ios --emulator",
+        "debug.android": "npm run preparedemo && cd demo && tns debug android --emulator",
+        "preparedemo": "cd demo && tns plugin remove nativescript-localstorage && tns plugin add .. && tns install",
+        "setup": "cd demo && npm install && tns plugin add .. && cd ..",
+        "start": "npm run demo.android"
+    }
+}

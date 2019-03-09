@@ -4,7 +4,7 @@
 <StackLayout>
     <Label [text]="'Liczba elementów: '+lista.length" style="font-size: 20;text-align: center;margin-top: 10;"></Label>
     <TextField [(ngModel)]="txt" hint="Wprowadź pozycję..."></TextField>
-    
+
     <Button text="Nowy" (tap)="dodaj()" style="width: 50%;" class="btn moj-przycisk"></Button>
     <ListView class="list-group" [items]="lista" (itemTap)="onItemTap($event)"
         style="height:1250px">
