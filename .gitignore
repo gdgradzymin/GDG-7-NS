@@ -44,4 +44,4 @@ TESTS-NativeScript_
 # typscript compiled js files
 /app/**/*.js
 /app/**/*.map
-!/app/nativescript-localstorage/**/*.js
+!/app/plugins/**/*.js
