@@ -31,6 +31,18 @@ export class HomeComponent implements OnInit {
         }
     }
 
+    remove(): void {
+        if (this.lista.length > 0) {
+            this.lista.pop();
+        }
+    }
+
+    removeAll(): void {
+        if (this.lista.length > 0) {
+            this.lista.length = 0;
+        }
+    }
+
     onItemTap(args: ItemEventData): void {
         // console.log("Item with index: " + args.index + " tapped");
 
