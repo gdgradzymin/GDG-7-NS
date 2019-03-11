@@ -6,7 +6,7 @@
     style="font-size: 16;text-align: center;margin-top: 10;"
   ></Label>
   <Label
-    [text]="'Liczba elementów: ' + lista.length"
+    [text]="'Liczba elementów: ' + lista2.length"
     style="font-size: 20;text-align: center;margin-top: 10;"
   ></Label>
   <TextField [(ngModel)]="txt" hint="Wprowadź pozycję..."></TextField>
@@ -31,7 +31,7 @@
   ></Button>
   <ListView
     class="list-group"
-    [items]="lista"
+    [items]="lista2"
     (itemTap)="onItemTap($event)"
     style="height:1250px"
   >

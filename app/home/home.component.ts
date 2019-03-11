@@ -13,9 +13,18 @@ export class HomeComponent implements OnInit {
     clickCount: number = 0;
     txt: string = "";
 
-    lista: string[] = ["pozycja 1", "pozycja 2"];
+    lista: string[] = [];
+
+    retrievedData: string = localStorage.getItem("position");
+    lista2: string[] = JSON.parse(this.retrievedData);
 
     constructor() { }
+
+    memory(): void{
+        localStorage.setItem("position", JSON.stringify(this.lista));
+        this.retrievedData = localStorage.getItem("position");
+        this.lista2 = JSON.parse(this.retrievedData);
+    }
 
     ngOnInit(): void {
         const res = localStorage.getItem("counter");
@@ -28,18 +37,24 @@ export class HomeComponent implements OnInit {
         if (this.txt) {
             this.lista.push(this.txt);
             this.txt = "";
+
+            this.memory();
         }
     }
 
     remove(): void {
         if (this.lista.length > 0) {
             this.lista.pop();
+
+            this.memory();
         }
     }
 
     removeAll(): void {
         if (this.lista.length > 0) {
             this.lista.length = 0;
+
+            this.memory();
         }
     }
 
