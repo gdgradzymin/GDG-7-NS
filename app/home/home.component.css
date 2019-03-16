@@ -21,3 +21,11 @@
     color: navy;
     margin-left: 20;
 }
+.my_action-bar{
+    color:rgb(192, 34, 34);
+   background-color: rgb(255, 198, 93);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25pt;
+    font-weight: bold;
+}
