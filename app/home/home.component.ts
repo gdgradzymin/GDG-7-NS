@@ -21,7 +21,12 @@ export class HomeComponent implements OnInit {
     }
 
     load(){
-        this.lista = JSON.parse(localStorage.getItem("position"));
+        const data = localStorage.getItem("position");
+        if(data && data.length>0){
+            this.lista = JSON.parse(data);
+        } else {
+            this.lista = [];
+        }
     }
 
     ngOnInit(): void {
