@@ -9,12 +9,11 @@
 <StackLayout>
   <Label
     [text]="'Liczba tapnięć: ' + clickCount.toString()"
-    style="font-size: 16;text-align: center;margin-top: 10;"
+    class="TextField_s" style="font-size: 20pt;"
   ></Label>
   <Label
     [text]="'Liczba elementów: ' + lista.length"
-    style="font-size: 20;text-align: center;margin-top: 10;"
-  ></Label>
+    class="TextField_s"></Label>
   <TextField [(ngModel)]="txt" hint="Wprowadź pozycję..."></TextField>
 
   <Button
