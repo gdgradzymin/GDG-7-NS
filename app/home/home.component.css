@@ -29,14 +29,26 @@
     font-size: 25pt;
     font-weight: bold;
 }
-.TextField_s{
+.LabelField_s{
     color:rgb(255, 198, 93);
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25;
+    font-weight: bold;
+    margin-top: 3;
+    margin-bottom: 3;
+    margin-right: 3;
+    margin-left: 3;
+}
+
+.TextField_s{
+    color:rgb(0, 255, 0);
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40pt;
+    font-size: 25;
     font-weight: bold;
-    margin-top: 10;
-    margin-bottom: 10;
-    margin-right: 10;
-    margin-left: 10;
+    margin-top: 5;
+    margin-bottom: 5;
+    margin-right: 5;
+    margin-left: 5;
 }
